@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+</head>
+<body>
+    
+    <form action="" method="post" >
+        <label for="full-name">Full Name :</label>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="30">
+        
+        <br>
+        <br>
+
+        <label for="email">Email :</label>
+        <input type="text" id="email" name="email" required>
+
+        <br>
+        <br>
+        <label for="subject">Subject :</label>
+        <select id="subject" name="subject" required>
+            <option value="">Select Subject</option>
+            <option value="genral">Genral inqiry</option>
+            <option value="support">Customer support</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="mobile.no">Phone No :</label>
+        <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" placeholder="Enter 10 digit Number">
+
+        <br>
+        <br>
+
+        <label for="message"> Message :</label>
+        <input type="textarea" id="message" name="message" required minlength="10" maxlength="50">
+
+        <br>
+        <br>
+
+        <button type="submit">SUBMIT</button>
+
+
+    </form>
+</body>
+</html>
