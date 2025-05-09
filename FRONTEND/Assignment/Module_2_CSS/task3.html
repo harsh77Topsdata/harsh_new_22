@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        /* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between; /* affects horizontal spacing */
+  align-items: stretch;           /* aligns sidebar and main vertically */
+  flex-wrap: wrap;                /* wraps on smaller screens */
+}
+
+/* Sidebar */
+.sidebar {
+  background: #f4f4f4;
+  padding: 1rem;
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+/* Main Content */
+.main-content {
+  background: #e2e2e2;
+  padding: 1rem;
+  flex: 2 1 400px;
+  min-width: 300px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center; /* for visual effect on narrow screens */
+  }
+
+  .sidebar, .main-content {
+    width: 100%;
+    flex: unset;
+  }
+}
+
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">Header</header>
+            <div class="content-wrapper">
+              <aside class="sidebar">Sidebar</aside>
+              <main class="main-content">Main Content</main>
+            </div>
+            <footer class="footer">Footer</footer>
+          </div>
+        
+    </body>
+</html>

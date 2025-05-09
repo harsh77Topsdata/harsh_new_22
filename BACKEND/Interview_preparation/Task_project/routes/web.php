@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function () {
@@ -15,3 +16,6 @@ Route::get('/manage_product',[ProductController::class,'show']);
 Route::get('/manage_product/{id}',[ProductController::class,'destroy']);
 Route::get('/edit_product/{id}',[ProductController::class,'edit']);
 Route::post('/edit_product/{id}',[ProductController::class,'update']);
+
+Route::get('/signup',[CustomerController::class,'index']);
+Route::post('/user_auth',[CustomerController::class,'store']);

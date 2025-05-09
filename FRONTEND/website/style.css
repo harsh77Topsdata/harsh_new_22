@@ -1,0 +1,651 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Theme Color */
+.primary {
+    color: #0cc0df;
+}
+
+.secondary {
+    color: #FFDE59;
+}
+
+
+/* End of Theme Color */
+
+.row {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    height: 80px;
+    background-color: #002b64;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links  {
+    display: flex;
+    gap: 20px;
+
+    
+}
+
+.nav-links a  {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    
+}
+.nav-links a:hover
+{
+    text-decoration:underline;
+    color: #0cc0df;
+}
+
+.join-btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #0097a7;
+}
+
+/* Header Image Section */
+.image {
+    height: 400px;
+    background-image: url('image/carousel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.image h1 {
+    color: black;
+    font-size: 42px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
+/* Features section */
+.feature {
+
+    width: 100%;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+
+
+}
+
+.feature-box {
+    background-color: #e6f8f9;
+    margin: 15px 15px 15px;
+    padding: 30px;
+    text-align: center;
+    width: 22%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    flex-direction: row;
+    float: left;
+
+}
+
+.feature-box:hover {
+    transform: translatex(-5px);
+
+
+}
+
+.icon {
+    font-size: 40px;
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #111;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/*-----------about---------*/
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text {
+    width: 70%;
+    flex: 1;
+    padding: 15px;
+}
+
+.text p {
+    margin: 15px;
+
+}
+
+.button {
+    padding: 15px;
+    margin: 15px;
+    background-color: #00bcd4;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid navy;
+}
+
+.text ul {
+    text-align: start;
+    margin: 25px;
+}
+
+.image1 image {
+    max-width: 30%;
+    margin: 25px;
+}
+
+/*-------CART----------*/
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 25px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.team-card {
+    background-color: #f0fcff;
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.social-icons {
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    background-color: #00bcd4;
+    color: white;
+    margin: 0 5px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #008ba3;
+}
+
+.team-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #000;
+}
+
+.team-card h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.team-card :hover {
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/*-----------contact---------*/
+.contact-section {
+    padding: 60px;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    text-align: center;
+}
+
+.sub-heading {
+    color: #00bcd4;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info,
+.map,
+.contact-form {
+    background: #fff;
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-info p,
+.info-box {
+    text-align: left;
+}
+
+.contact-info a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.info-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.icon1 {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #00bcd4;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0097a7;
+}
+
+/*-----------service---------*/
+.courses-section {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    font-size: 36px;
+    color: #1a1a3c;
+    margin-bottom: 40px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.course-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-info h3 {
+    margin: 0;
+    color: #1a1a3c;
+}
+
+.course-info p {
+    margin: 0;
+    color: #00bcd4;
+    font-size: 14px;
+}
+
+.course-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.course-card:hover::before {
+    opacity: 1;
+}
+
+.course-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/*----------SERVICE------------*/
+.popular-courses {
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #1a1a3c;
+    margin-bottom: 40px;
+}
+
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-card {
+    background: #fff;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-img {
+    position: relative;
+}
+
+.course-img img {
+    width: 100%;
+    display: block;
+}
+
+.course-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.course-card:hover .course-buttons {
+    opacity: 1;
+}
+
+.course-buttons a {
+    background: #00bcd4;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.course-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.course-details h3 {
+    color: #1a1a3c;
+    margin: 0;
+}
+
+.stars {
+    color: #00c853;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.stars span {
+    color: #888;
+    font-size: 14px;
+}
+
+.course-details p {
+    font-weight: bold;
+    color: #1a1a3c;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+    padding: 0;
+    list-style: none;
+}
+
+/*-----------Footer------------*/
+.site-footer {
+    background-color: #002b64;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    background: #1a1a3c;
+    color: #fff;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.social-icons a:hover {
+    background: #00bcd4;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #fff;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background: #0097a7;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

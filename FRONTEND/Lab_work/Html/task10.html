@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter your name" pattern="[A-Z]{4-6}" minlength="4" maxlength="10" required>
+
+        <br>
+        <br>
+
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter your email" pattern="[a-z 0-9][@]" minlength="" maxlength="">
+
+        <br>
+        <br>
+
+        <label for="">Mobile Number</label>
+        <input type="tel" placeholder="Enter your number" pattern="[0-9]{10}" required>
+
+        <br>
+        <br>
+
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter your password" pattern="[A-Z][a-z 0-9]" minlength="8" maxlength="12" required>
+
+        <br>
+        <br>
+
+        <select name="" id="">
+            <option value="" hidden>-------city-------</option>
+            <option value="">Ahmedabad</option>
+            <option value="">Surat</option>
+            <option value="">Baroda</option>
+        </select>
+
+        <br>
+        <br>
+
+        <button name="submit">Submit</button>
+
+
+
+
+         
+    </form>
+</body>
+</html>

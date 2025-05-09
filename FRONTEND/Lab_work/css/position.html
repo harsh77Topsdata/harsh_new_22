@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            column-gap: 20px;
+            flex-wrap: wrap;
+        }
+    
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        }
+        
+        #box1{
+            position: static;
+            top: 200px;
+        }
+        
+        #box2{
+            position: fixed;
+            top: 10px;
+            left: 20px;
+        }
+        
+        .box1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+        }
+    
+        /*
+        1.static->By Defult
+        2.fixed->body tag
+        3.reletive
+        4.absolate
+        */
+    </style>
+</head>
+<body>
+    <section>
+        <box class="box" id="box1"></box>
+        <box class="box" id="box2"></box>
+        <box class="box" id="box3"></box>
+        <box class="box" id="box4"></box>
+        <box class="box" id="box5">
+            <div class="min">Min</div>
+            <div class="max">Max</div>
+        </box>
+        <box class="box" id="box6"></box>
+        <box class="box" id="box7"></box>
+        <box class="box" id="box8"></box>
+    </section>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <box class="box1"></box>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eum corporis impedit ipsa reiciendis numquam maiores deleniti. Id voluptatem maiores eius, rem, dicta culpa velit tempore dolore alias, et repellendus</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nemo fugiat rem et, ad molestiae. Rem eveniet magni assumenda temporibus ratione, veritatis omnis modi et, eius tempora expedita aliquam earum.</p>
+</body>
+</html>
