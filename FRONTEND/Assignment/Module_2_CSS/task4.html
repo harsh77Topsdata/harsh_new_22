@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-weight: 900;
+            color: navy;
+            margin: 5px;
+            padding: 10px
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .product-grid{
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            gap: 15px;
+        }
+
+        .card{
+            height: 250px;
+            background-color: rgb(184, 173, 173);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .card img{
+            height: 150px;
+            border-radius: 8px;
+
+        }
+
+        .Product-titles{
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .price{
+            font-size: large;
+            color: darkcyan;
+            font: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Product</h1>
+    <div class="product-grid">
+        <div class="card">
+            <img src="image/pro1.jpg" alt="product1">
+            <h2 class="Product-titles">Camera</h2>
+            <p class="price">$25.15</p>
+        </div>
+        <div class="card">
+            <img src="image/pro2.jpeg" alt="product2">
+            <h2 class="Product-titles">Watch</h2>
+            <p class="price">$15.15</p>
+        </div>
+        <div class="card">
+            <img src="image/pro3.webp" alt="product3">
+            <h2 class="Product-titles">Buds</h2>
+            <p class="price">$30.15</p>
+        </div>
+        <div class="card">
+            <img src="image/pro4.jpg" alt="product4">
+            <h2 class="Product-titles">Goggls</h2>
+            <p class="price">$40</p>
+        </div>
+        <div class="card">
+            <img src="image/pro5.jpeg" alt="product5">
+            <h2 class="Product-titles">Bottle</h2>
+            <p class="price">$45.25</p>
+        </div>
+        <div class="card">
+            <img src="image/pro6.jpg" alt="product6">
+            <h2 class="Product-titles">Phone</h2>
+            <p class="price">$15.24</p>
+        </div>
+        <div class="card">
+            <img src="image/pro7.jpg" alt="product7">
+            <h2 class="Product-titles">Laptop</h2>
+            <p class="price">$19.18</p>
+        </div>
+        <div class="card">
+            <img src="image/pro8.jpg" alt="product8">
+            <h2 class="Product-titles">TV</h2>
+            <p class="price">$35.5</p>
+        </div>
+        <div class="card">
+            <img src="image/pro9.jpg" alt="product9">
+            <h2 class="Product-titles">Headphone</h2>
+            <p class="price">$15.15</p>
+        </div>
+    </div>
+</body>
+</html>

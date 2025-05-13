@@ -2,72 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>DERI_PRODUCT</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta charset="UTF-8">
+    <title>Sweet Mart | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Favicon -->
-    <link href="{{url('website/img/favicon.ico')}}" rel="icon">
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff0f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        .login-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(255, 105, 135, 0.2);
+            width: 100%;
+            max-width: 450px;
+        }
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ff5e78;
+        }
 
-    <!-- Libraries Stylesheet -->
-    <link href="{{url('website/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{url('website/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+        }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{url('website/css/style.css')}}" rel="stylesheet">
-    
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
 
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff5e78;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-login:hover {
+            background-color: #e85066;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #ff5e78;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
-@include('sweetalert::alert')
-     
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h1 class="section-title position-relative text-center mb-5">User Login</h1>
-                </div>
+
+    <div class="login-container">
+        <h2>Login to Sweet Mart</h2>
+        <form method="POST" action="{{url('/user_auth')}}">
+            @csrf
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="btn-login">Login</button>
+
+            <div class="signup-link">
+                Don't have an account? <a href="signup">Signup here</a>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <div class="contact-form bg-light rounded p-5">
-                        <div id="success"></div>
-                        <form method="post" name="sentMessage" action="{{url('/user_auth')}}">
-                            @csrf
-                            <div class="form-row">
-                                <div class="col-sm-12 control-group">
-                                    <input type="email" class="form-control p-4" name="email" id="email" placeholder="Your Email">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-sm-12 control-group">
-                                    <input type="password" class="form-control p-4" name="password" id="password" placeholder="Your password">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-block py-3 px-5" type="login" name="login" id="login"> login </button>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-sm-12 control-group">
-                                    <a href="signup">If you no any account go to signup</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
+
 </body>
+
+</html>

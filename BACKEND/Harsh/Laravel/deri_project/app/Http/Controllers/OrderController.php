@@ -7,6 +7,7 @@ use App\Models\product;
 use App\Models\user;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class OrderController extends Controller
 {
@@ -40,6 +41,15 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         //
+        $insert=new order;
+        $insert->pro_id=$request->pro_id;
+        $insert->user_id=session('uid');
+        $insert->quantity=$request->qty;
+        $insert->totalamount=$request->total;
+        $insert->save();
+
+        Alert::success('success','Order Placed Success');
+        return view('website.user_profile');
     }
 
     /**

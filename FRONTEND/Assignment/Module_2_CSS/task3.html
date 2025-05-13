@@ -1,94 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-        /* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+    body {
+      font-family: sans-serif;
+    }
 
-/* Header */
-.header {
-  background: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-/* Content Wrapper */
-.content-wrapper {
-  display: flex;
-  flex: 1;
-  justify-content: space-between; /* affects horizontal spacing */
-  align-items: stretch;           /* aligns sidebar and main vertically */
-  flex-wrap: wrap;                /* wraps on smaller screens */
-}
+    .header,
+    .footer {
+      height: 150px;
+      background-color: #3d415c;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
 
-/* Sidebar */
-.sidebar {
-  background: #f4f4f4;
-  padding: 1rem;
-  flex: 1 1 200px;
-  min-width: 200px;
-}
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 1rem;
+      padding: 1rem;
+    }
 
-/* Main Content */
-.main-content {
-  background: #e2e2e2;
-  padding: 1rem;
-  flex: 2 1 400px;
-  min-width: 300px;
-}
+    .sidebar {
+      flex: 1;
+      background-color: #dfe5e6;
+      padding: 1rem;
+      min-width: 150px;
+    }
 
-/* Footer */
-.footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* Responsive Enhancements */
-@media (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column;
-    align-items: center; /* for visual effect on narrow screens */
-  }
-
-  .sidebar, .main-content {
-    width: 100%;
-    flex: unset;
-  }
-}
+    .main {
+      flex: 3;
+      background-color: #dfe5e6;
+      padding: 1rem;
+    }
 
 
-    </style>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">Header</header>
-            <div class="content-wrapper">
-              <aside class="sidebar">Sidebar</aside>
-              <main class="main-content">Main Content</main>
-            </div>
-            <footer class="footer">Footer</footer>
-          </div>
-        
-    </body>
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .sidebar,
+      .main {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">This is a header</header>
+    
+    <div class="content">
+      <aside class="sidebar">this is a Sidebar</aside>
+      <main class="main">The Main Content</main>
+    </div>
+
+    <footer class="footer">This is a Footer</footer>
+  </div>
+</body>
+
 </html>

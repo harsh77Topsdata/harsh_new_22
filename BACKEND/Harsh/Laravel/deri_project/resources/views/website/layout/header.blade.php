@@ -54,10 +54,11 @@ function active($currect_page)
                         <a class="text-white px-3" href="">Help</a>
                         <span class="text-white">|</span>
                         @if(session()->has('uid'))
-                        <a class="text-white pr-3" href="user_logout">logout</a>
+                            <span class="text-white"></span>
+                            <a class="text-white pr-3" href="user_logout">Logout</a>
                         @else
-                        <span class="text-white"></span>
-                        <a class="text-white px-3" href="signup">signup</a>
+                            <span class="text-white"></span>
+                            <a class="text-white px-3" href="signup">signup</a>
                         @endif
                     </div>
                 </div>
@@ -89,7 +90,7 @@ function active($currect_page)
                         </a>
                     </div>
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -109,25 +110,24 @@ function active($currect_page)
                 <a href="index" class="navbar-brand mx-5 d-none d-lg-block">
                     <h1 class="m-0 display-4 text-primary"><span class="text-secondary">O</span>Sweets</h1>
                 </a>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="{{url('index')}}" class="nav-item nav-link <?php echo active('Home')?>">Home</a>
                         <a href="{{url('about')}}" class="nav-item nav-link <?php echo active('About')?>">About</a>
-                        <a href="{{url('catgories')}}" class="nav-item nav-link <?php echo active('Catgories')?>">Catgories</a>
+                        <a href="{{url('catgories')}}"
+                            class="nav-item nav-link <?php echo active('Catgories')?>">Catgories</a>
                     </div>
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="{{url('service')}}" class="nav-item nav-link <?php echo active('Service')?>">Service</a>
-                        <a href="{{url('gallery')}}" class="nav-item nav-link <?php echo active('Gallery')?>">Gallery</a>
-                        <a href="{{url('contact')}}" class="nav-item nav-link <?php echo active('Contact')?>">Contact</a>
+                        <a href="{{url('service')}}"
+                            class="nav-item nav-link <?php echo active('Service')?>">Service</a>
+                        <a href="{{url('gallery')}}"
+                            class="nav-item nav-link <?php echo active('Gallery')?>">Gallery</a>
+                        <a href="{{url('contact')}}"
+                            class="nav-item nav-link <?php echo active('Contact')?>">Contact</a>
                     </div>
-                    <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Small button    
-                        </button>
-                    <ul class="dropdown-menu">
-                    </ul>
-</div>
+
                 </div>
+
         </div>
     </div>
     </nav>

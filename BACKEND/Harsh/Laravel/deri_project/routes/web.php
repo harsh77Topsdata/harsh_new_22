@@ -39,6 +39,7 @@ Route::get('/gallery', function () {
 });
 
 Route::get('/order/{id}',[OrderController::class,'index'])->middleware(\App\Http\Middleware\user_after_login::class);
+Route::post('/order/{id}',[OrderController::class,'store'])->middleware(\App\Http\Middleware\user_after_login::class);
 // Route::get('/order/{email}',[OrderController::class,'user_data']);
 
 Route::get('/product/{id}',[ProductController::class,'index']);
