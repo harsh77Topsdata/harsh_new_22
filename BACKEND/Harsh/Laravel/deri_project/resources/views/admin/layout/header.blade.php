@@ -84,8 +84,7 @@ function active($currect_page)
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
                 <a href="index" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Sweets
-                        </span>2.0</h1>
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Sweets</span>2.0</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -96,15 +95,12 @@ function active($currect_page)
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index" class="nav-item nav-link <?php echo active('dashboard')?>">Home</a>
-                        <a href="manage_catgories"
-                            class="nav-item nav-link <?php echo active('manage_catgories')?>">catgories</a>
-                        <a href="manage_product"
-                            class="nav-item nav-link <?php echo active('manage_Product')?>">Product</a>
-                        
+                        <a href="manage_catgories" class="nav-item nav-link <?php echo active('manage_catgories')?>">catgories</a>
+                        <a href="manage_product" class="nav-item nav-link <?php echo active('manage_Product')?>">Product</a>
+                        <a href="manage_offers" class="nav-item nav-link <?php echo active('manage_offers')?>">Offers</a>
                         <a href="manage_contact" class="nav-item nav-link <?php echo active('manage_Contact')?>">Contact</a>
-
                         @if (session('aid'))
-                        <a href="{{url('/logout')}}" class="nav-item nav-link btn btn-danger">Logout</a>
+                        <a href="{{url('/logout')}}" class="nav-item nav-link btn btn-primary mb-2 mt-2 mr-2 ml-2" style="">Logout</a>
                         @else
                         <a href="{{url('/admin_login')}}" class="nav-item nav-link btn btn-info">Login</a>
                        @endif
@@ -113,5 +109,5 @@ function active($currect_page)
         </div>
         </nav>
     </div>
-    </div>
+    
     <!-- Navbar End -->

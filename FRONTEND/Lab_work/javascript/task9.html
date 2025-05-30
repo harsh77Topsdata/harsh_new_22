@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="number 1" id="n1">
+
+    <button onclick="factorial()">Submit</button>
+    <h1 id="h1"></h1>
+
+    <script>
+        let number = document.getElementById("n1")
+
+        console.log(number2)
+
+        function factorial(){
+            let fac=1;
+            let i;
+
+            console.log("hello")
+
+            for(i=1;i<=parseInt(number.value);i++)
+            {
+                fac*=1;
+            }
+
+            document.getElementById("h1").innerText=`factorial is : ${fac}`
+        }
+    </script>
+</body>
+</html>

@@ -43,7 +43,6 @@ class CatgoryController extends Controller
         $filename=time().'_img.'.$request->file('cat_img')->getClientOriginalExtension();
         $file->move('admin/upload/catgory/',$filename);  
         $data->cat_img=$filename;
-
         
         $data->save();
 

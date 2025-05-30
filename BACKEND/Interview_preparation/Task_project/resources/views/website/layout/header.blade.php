@@ -26,6 +26,9 @@
         <a class="nav-link active" href="/">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link active" href="/add_items">item</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="login">login</a>
       </li>
       <li class="nav-item">

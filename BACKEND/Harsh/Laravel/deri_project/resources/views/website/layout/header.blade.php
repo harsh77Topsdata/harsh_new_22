@@ -112,18 +112,20 @@ function active($currect_page)
                 </a>
                 <div class="navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="{{url('index')}}" class="nav-item nav-link <?php echo active('Home')?>">Home</a>
+                        <a href="{{url('/')}}" class="nav-item nav-link <?php echo active('Home')?>">Home</a>
                         <a href="{{url('about')}}" class="nav-item nav-link <?php echo active('About')?>">About</a>
                         <a href="{{url('catgories')}}"
                             class="nav-item nav-link <?php echo active('Catgories')?>">Catgories</a>
                     </div>
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="{{url('service')}}"
-                            class="nav-item nav-link <?php echo active('Service')?>">Service</a>
+                        <a href="{{url('offers')}}"
+                            class="nav-item nav-link <?php echo active('news')?>">Offers</a>
                         <a href="{{url('gallery')}}"
                             class="nav-item nav-link <?php echo active('Gallery')?>">Gallery</a>
                         <a href="{{url('contact')}}"
                             class="nav-item nav-link <?php echo active('Contact')?>">Contact</a>
+                        <a href="{{url('signup')}}"
+                            class="nav-item nav-link <?php echo active('signup')?>"></a>
                     </div>
 
                 </div>

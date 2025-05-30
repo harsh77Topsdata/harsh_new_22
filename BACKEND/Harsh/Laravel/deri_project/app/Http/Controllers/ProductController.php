@@ -57,6 +57,7 @@ class ProductController extends Controller
 
         return redirect ('add_product');
     }
+    
 
     /**
      * Display the specified resource.

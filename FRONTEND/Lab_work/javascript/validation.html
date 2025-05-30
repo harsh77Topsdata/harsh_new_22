@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="n1" placeholder="Enter name">
+    <button onclick="validation()">Submit</button>
+    
+    <h1 id="h1"></h1>
+    <script>
+        function validation(){
+            let name=document.getElementById('n1')
+            let h1_tag=document.getElementById("h1")
+
+            if(name.value == "" || name.value==null)
+            {
+                document.getElementById("h1").innerText = "name required !!"
+                h1_tag.style.color="red"
+                h1_tag.style.fontFamily="sans-serif"
+                return false
+            }
+
+            else
+            {
+                document.getElementById("h1").innerText=""
+            }
+        }
+
+        function change_valid(){
+
+        }
+    </script>
+</body>
+</html>
