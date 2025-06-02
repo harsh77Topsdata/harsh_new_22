@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="courses-1.jpg" alt="" id="img" height="600px" width="100%">
+
+    <button onclick="next_image()">Next Image</button>
+    <button onclick="Previous_image()">Previous Image</button>
+
+    <script>
+        let image_tag=document.getElementById("img")
+
+        console(image_tag.src)
+
+        function next_image()
+        {
+            if(image_tag.src.match("courses-1.jpg"))
+            {
+                image_tag.src="courses-2.jpg"
+            }
+            else if(image_tag.src.match("courses-2.jpg"))
+            {
+                image_tag.src="courses-3.jpg"
+            }
+            else
+            {
+                image_tag.src="courses-1.jpg"
+            }
+        }
+
+        function Previous_image()
+        {
+            if(image_tag.src.match("courses-3.jpg"))
+            {
+                image_tag.src="courses-2.jpg"
+            }
+            else if(image_tag.src.match("courses-2.jpg"))
+            {
+                image_tag.src="courses-1.jpg"
+            }
+            else
+            {
+                image_tag.src="courses-3.jpg"
+            }
+        }
+    </script>
+</body>
+</html>
