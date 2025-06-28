@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue{
+            color: bl;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat
+        earum sed quasi totam voluptates minima molestias reiciendis
+        accusantium. Eaque exercitationem accusamus earum repellendus
+        laboriosam aliquid quo laborum voluptate reprehenderit?</p>
+    <div>this is some important class</div>
+    <button>Click</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("div").addClass("Some add class important.");
+        });
+    });
+</script>
+
+</html>

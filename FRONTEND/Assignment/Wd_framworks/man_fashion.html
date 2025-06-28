@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Vertical feel using Bootstrap carousel with fade effect */
+        #bannerCarousel .carousel-item {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cce5ff;
+            color: #000;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        #bannerCarousel {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Rotating Banner using Bootstrap Carousel -->
+    <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                Buy now, pay later with Klarna. | 100 day returns.
+            </div>
+            <div class="carousel-item">
+                Check new in!
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
+        <div class="container-fluid">
+
+            <!-- 🔸 Brand Name (Left) -->
+            <a class="navbar-brand fw-bold text-dark" href="#">ONLY&SONS</a>
+
+            <!-- 🔸 Toggler for mobile -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 🔸 Mobile Icons -->
+            <div class="d-md-none d-flex align-items-center gap-2 ms-3">
+                <input type="search"
+                    class="form-control form-control-sm border-0 border-bottom bg-transparent rounded-0"
+                    placeholder="Search..." style="max-width: 130px;">
+                <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
+                <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
+                <a href="#" class="text-dark fs-5"><i class="bi bi-bag"></i></a>
+            </div>
+
+            <!-- 🔸 Collapse Content -->
+            <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbarCollapse">
+                <!-- 🔹 Nav Links -->
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-md-2">
+                    <!-- New Arrival -->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="new_arrival.html">
+                            New Arrival
+                        </a>
+                    </li>
+
+                    <!-- Men Fashion -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-semibold" href="man_fashion.html" role="button"
+                            data-bs-toggle="dropdown">
+                            Men Fashion
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#tshirt" onclick="showSection('tshirt')">T-Shirts</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#jense" onclick="showSection('jeans')">Jeans</a></li>
+                            <li><a class="dropdown-item" href="#jackets" onclick="showSection('jackets')">Jackets</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#longwear" onclick="showSection('loungwear')">Loung
+                                    Wear</a></li>
+                            <li><a class="dropdown-item" href="#sports" onclick="showSection('sports')">Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Junior -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-semibold" href="only&sons_junior.html"
+                            role="button" data-bs-toggle="dropdown">
+                            ONLY & SONS Junior
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#boys" onclick="showSection('boys')">Boy'sTees</a></li>
+                            <li><a class="dropdown-item" href="#shopcat" onclick="showSection('shopcat')">Shop by
+                                    catgoary</a></li>
+                            <li><a class="dropdown-item" href="#hoodies" onclick="showSection('hoodies')">Hoodies</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#bottem" onclick="showSection('bottem')">Bottem</a></li>
+                            <li><a class="dropdown-item" href="#seeall" onclick="showSection('seeall')">See
+                                    all</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Shop for Her -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold text-dark bg-white px-3 py-2"
+                            href="shop_her.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop for Her
+                        </a>
+                        <ul class="dropdown-menu mt-2 border-0 shadow">
+                            <li><a class="dropdown-item py-2" href="#dresses"
+                                    onclick="showSection('dresses')">Dresses</a></li>
+                            <li><a class="dropdown-item py-2" href="#jeans" onclick="showSection('jeans')">Jeans</a>
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#casual" onclick="showSection('casual')">casual</a>
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#sports" onclick="showSection('sports')">Sports
+                                    Wear</a></li>
+                            <li><a class="dropdown-item py-2" href="#fashion"
+                                    onclick="showSection('fashion')">Fashion</a></li>
+                            <li><a class="dropdown-item py-2" href="#all" onclick="showSection('all')">All</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Offers -->
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-semibold" href="offers.html">Offers</a>
+                    </li>
+                </ul>
+
+                <!-- 🔹 Desktop Search + Icons -->
+                <div class="d-none d-md-flex align-items-center gap-2 ms-auto">
+                    <input type="search"
+                        class="form-control form-control-sm border-0 border-bottom bg-transparent rounded-0"
+                        placeholder="Search..." style="max-width: 200px;">
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-bag"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-------slider-------->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3 ms-3 me-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/slide1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/slide2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-----------------man fashion index---------------------->
+    <div class="container">
+        <div class="card text-center mx-auto mt-5" style="width: 70%; border-radius: 10px; border-color: darkgray;">
+            <div class="card-header"
+                style="border-color: darkgray; font-size: large; font-weight: bold; font-family: 'Times New Roman', Times, serif; color: #38393d;">
+                Man Suitable
+            </div>
+            <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-----card1----->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/card1.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    
+                    <!-----card2----->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/card2.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+
+                    <!-----card3----->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/card3.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+
+                <h5 class="card-title mt-2" style="color: darkcyan;">Special MAN Offers Coming with 30% Discount</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="new_arrival.html" class="btn btn-dark">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted" style="border-color: darkgray;">
+                2 days ago
+            </div>
+        </div>
+    </div>
+
+    <!--------T-shirt--------->
+    <div id="tshirt" class="category-section mt-5" style="display:none;">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
+                                Overshirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
+                                Shorts</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
+                                Chino
+                                trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
+                                Cardigan</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
+                                Fit Trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
+                                Shirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/t-shirt/img8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
+                                T-shirt</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Jense--------->
+    <div id="jeans" class="category-section mt-5" style="display:none;">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
+                                Overshirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
+                                Shorts</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
+                                Chino
+                                trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
+                                Cardigan</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
+                                Fit Trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
+                                Shirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jeans_man/img8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
+                                T-shirt</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Jacket--------->
+    <div id="jackets" class="category-section mt-5" style="display:none;">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
+                                Overshirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
+                                Shorts</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
+                                Chino
+                                trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
+                                Cardigan</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
+                                Fit Trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
+                                Shirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/jacket/img8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
+                                T-shirt</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Loung wear--------->
+    <div id="loungwear" class="category-section mt-5" style="display:none;">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
+                                Overshirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
+                                Shorts</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
+                                Chino
+                                trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
+                                Cardigan</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
+                                Fit Trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
+                                Shirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/loungwear/img8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
+                                T-shirt</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------sports--------->
+    <div id="sports" class="category-section mt-5" style="display:none;">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
+                                Overshirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
+                                Shorts</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
+                                Chino
+                                trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
+                                Cardigan</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
+                                Fit Trousers
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
+                                Shirt</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/sportman/img8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
+                                T-shirt</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Footer Start -->
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5" style="height: 450px;">
+        <div class="container mt-5">
+            <div class="row">
+
+                <!--  Brand/About -->
+                <div class="col-md-4 mb-3">
+                    <h5>MyWebsite</h5>
+                    <p>Empowering your web experience with modern,
+                        responsive design using Bootstrap.</p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact</h5>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: Mumbai, India</p>
+                </div>
+
+            </div>
+
+            <!--Copyright -->
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0">&copy; 2025 MyWebsite. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to toggle sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.category-section').forEach(function (section) {
+                section.style.display = 'none';
+            });
+            // Show selected
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

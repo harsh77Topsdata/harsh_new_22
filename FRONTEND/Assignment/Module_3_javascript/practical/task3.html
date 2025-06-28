@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Arthamatic Opraters</h2>
+    
+    <h3>Addition :</h3><p id="demo"></p>
+    
+    <h3>Substriction :</h3><p id="demo1"></p>
+    
+    <h3>multipliaction :</h3><p id="demo2"></p>
+    
+    <h3>Division :</h3><p id="demo3"></p>
+    
+    <h3>Comparision Opraters :</h3><p id="demo4"></p>
+    
+    <h3>Logic Opraters :</h3><p id="demo5"></p>
+    
+    <script>
+        let a=20;
+        let b=25;
+
+        document.getElementById("demo").innerText=a+b;
+        document.getElementById("demo1").innerText=a-b;
+        document.getElementById("demo2").innerText=a*b;
+        document.getElementById("demo3").innerText=a/b;
+
+        let text1="A";
+        let text2="B";
+        let result=text1 < text2
+
+        document.getElementById("demo4").innerHTML='Is A less than B ?' +  result;
+
+        let x=7;
+        let y=8;
+
+        document.getElementById("demo5").innerHTML = (x<10 && y>1) + "<br>" + (x<10 && y>1);
+
+        
+    </script>
+</body>
+</html>

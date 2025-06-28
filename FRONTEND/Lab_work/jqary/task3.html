@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, doloremque et quae pariatur consequuntur impedit
+        veritatis nisi ipsum maiores est, ipsam aperiam molestiae sint soluta dolor voluptates odio in quo?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dignissimos esse rerum assumenda aut sapiente
+        voluptas, totam, facilis incidunt eligendi exercitationem veritatis harum pariatur deserunt natus suscipit
+        minima! Quisquam, cupiditate.</p>
+    <button id="button">Click</button>
+    <button id="button1">Click here</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#button").click(function () {
+            $("p").append("Some Appended text.");
+        });
+
+        $("#button1").click(function () {
+            $("p").prepend("Some Appended text.");
+        });
+    });
+</script>
+</html>
