@@ -24,6 +24,12 @@
         #bannerCarousel {
             overflow: hidden;
         }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -40,7 +46,7 @@
         </div>
     </div>
 
-    <!-- Responsive Navbar -->
+    <!-- Responsive Navbar start -->
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
         <div class="container-fluid">
 
@@ -76,59 +82,24 @@
                     </li>
 
                     <!-- Men Fashion -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark fw-semibold" href="man_fashion.html" role="button"
-                            data-bs-toggle="dropdown">
-                            Men Fashion
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="man_fashion.html">
+                            Man Fashion
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#tshirt" onclick="showSection('tshirt')">T-Shirts</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#jeans" onclick="showSection('jeans')">Jeans</a></li>
-                            <li><a class="dropdown-item" href="#jackets" onclick="showSection('jackets')">Jackets</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#loungwear" onclick="showSection('loungwear')">Loung
-                                    Wear</a></li>
-                            <li><a class="dropdown-item" href="#sports" onclick="showSection('sports')">Sports</a></li>
-                        </ul>
                     </li>
 
                     <!-- Junior -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark fw-semibold" href="only&sons_junior.html"
-                            role="button" data-bs-toggle="dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="only&sons_junior.html">
                             ONLY & SONS Junior
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#boys" onclick="showSection('boys')">Boy'sTees</a></li>
-                            <li><a class="dropdown-item" href="#shopcat" onclick="showSection('shopcat')">Shop by
-                                    catgoary</a></li>
-                            <li><a class="dropdown-item" href="#hoodies" onclick="showSection('hoodies')">Hoodies</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#bottem" onclick="showSection('bottem')">Bottem</a></li>
-                            <li><a class="dropdown-item" href="#seeall" onclick="showSection('seeall')">See all</a></li>
-                        </ul>
                     </li>
 
                     <!-- Shop for Her -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-semibold text-dark bg-white px-3 py-2"
-                            href="shop_her.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Shop for Her
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="shop_her.html">
+                            Shop her
                         </a>
-                        <ul class="dropdown-menu mt-2 border-0 shadow">
-                            <li><a class="dropdown-item py-2" href="#dresses"
-                                    onclick="showSection('dresses')">Dresses</a></li>
-                            <li><a class="dropdown-item py-2" href="#jeans" onclick="showSection('jeans')">Jeans</a>
-                            </li>
-                            <li><a class="dropdown-item py-2" href="#casual" onclick="showSection('casual')">casual</a>
-                            </li>
-                            <li><a class="dropdown-item py-2" href="#sports" onclick="showSection('sports')">Sports
-                                    Wear</a></li>
-                            <li><a class="dropdown-item py-2" href="#fashion"
-                                    onclick="showSection('fashion')">Fashion</a></li>
-                            <li><a class="dropdown-item py-2" href="#all" onclick="showSection('all')">All</a></li>
-                        </ul>
                     </li>
 
                     <!-- Offers -->
@@ -149,88 +120,1018 @@
             </div>
         </div>
     </nav>
+    <!-- Responsive Navbar end-->
 
-    <!--------Dresses--------->
-    <div id="dresses" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <!--------Main Page Start--------->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/her1.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/her2.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/her3.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--------Main Page End--------->
 
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONLCHIANTI Langes Kleid</h5>
+    <div class="container my-4">
+        <div class="d-flex justify-content-center flex-wrap gap-2">
+            <button class="btn btn-dark btn-lg px-4 shadow" onclick="showSection('dresses')">Dresses</button>
+            <button class="btn btn-dark btn-lg px-4 shadow" onclick="showSection('jeans')">Jeans</button>
+            <button class="btn btn-dark btn-lg px-4 shadow" onclick="showSection('casual')">Casual</button>
+            <button class="btn btn-dark btn-lg px-4 shadow" onclick="showSection('sports')">Sports Wear</button>
+            <button class="btn btn-dark btn-lg px-4 shadow" onclick="showSection('fashion')">Fashion</button>
+            <button class="btn btn-dark btn-lg px-4 shadow" onclick="showSection('all')">All</button>
+        </div>
+    </div>
+
+    <!-- Category Section Content (Just Example Sections) -->
+    <div class="container">
+
+        <!--------Dresses--------->
+        <div id="dresses" class="category-section" style="display: none;">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹1,299</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                   <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹1,299</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹1,899</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹13,299</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹4,299</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹1,199</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹12,299</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="image/her/img8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+
+                                <!-- Product Title -->
+                                <h5 class="card-title text-center" style="font-size: medium;">
+                                    ONLCHIANTI Langes Kleid
+                                </h5>
+
+                                <!-- Price -->
+                                <p class="text-center fw-bold text-success mb-2">₹3,299</p>
+
+                                <!-- Size Buttons -->
+                                <div class="text-center mb-2">
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <input type="radio" class="btn-check" name="size1" id="size-s"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-s">S</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-m"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-m">M</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-l"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-l">L</label>
+
+                                        <input type="radio" class="btn-check" name="size1" id="size-xl"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="size-xl">XL</label>
+                                    </div>
+                                </div>
+
+                                <!-- Color Buttons -->
+                                <div class="text-center mb-3">
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color1" id="color-black"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-black">Black</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-blue"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-blue">Blue</label>
+
+                                        <input type="radio" class="btn-check" name="color1" id="color-red"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-dark btn-sm" for="color-red">Red</label>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="mt-auto d-flex justify-content-between">
+                                    <button class="btn btn-dark btn-sm w-50 me-1">Add to Cart</button>
+                                    <button class="btn btn-dark btn-sm w-50 ms-1">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--------jeans--------->
+        <div id="jeans" class="category-section" style="display: none;">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;"> Schnitt Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/jeans/img8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Dress Spacial</h5>
+        </div>
+
+        <!--------casual-------->
+        <div id="casual" class="category-section" style="display: none;">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
+                                    trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
+                                    Cardigan</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit
+                                    Trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/professional/img8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Dress Spacial</h5>
+        </div>
+
+        <!--------sports-------->
+        <div id="sports" class="category-section" style="display: none;">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
+                                    trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
+                                    Cardigan</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit
+                                    Trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/sports/img8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Dress Spacial</h5>
+        </div>
+
+        <!---------fashion---------->
+        <div id="fashion" class="category-section" style="display: none;">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
+                                    trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit Cardigan
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit
+                                    Trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/trends/img8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Dress Spacial</h5>
+        </div>
+
+        <div id="all" class="category-section" style="display: none;">
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt</h5>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Dress Spacial</h5>
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Dress Spacial</h5>
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts
+                                </h5>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/her/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Dress Spacial</h5>
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
+                                    trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit Cardigan
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit
+                                    Trousers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="image/all/img8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -238,459 +1139,129 @@
         </div>
     </div>
 
-    <!--------Jeans--------->
-    <div id="jeans" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-6 g-4">
 
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;"> Schnitt Jeans</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">Schnitt Jeans</h5>
-                        </div>
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Jeans</h6>
+                        <p class="card-text text-muted">Nice item for daily use and best offer.</p>
+                        <a href="#" class="btn btn-dark px-4">Shop Now</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!--------Casual--------->
-    <div id="casual" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/professional/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
-                        </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Stylish Dress</h6>
+                        <p class="card-text text-muted">Stylish and modern design.</p>
+                        <a href="#" class="btn btn-dark px-4">Shop Now</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!--------Sports Wear-------->
-    <div id="sports" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sports/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
-                        </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/card6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Yoga Spacial</h6>
+                        <p class="card-text text-muted">Top-quality material used.</p>
+                        <a href="#" class="btn btn-dark px-4">Shop Now</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
 
-    <!--------Fashion--------->
-    <div id="fashion" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/trends/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
-                        </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Trousers</h6>
+                        <p class="card-text text-muted">Elegant and durable wear.</p>
+                        <a href="#" class="btn btn-dark px-4">Shop Now</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-------All---------->
-    <div id="all" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/all/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE T-shirt</h5>
-                        </div>
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/card5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Sports item</h6>
+                        <p class="card-text text-muted">Perfect for every occasion.</p>
+                        <a href="#" class="btn btn-dark px-4">Shop Now</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">T-shirt</h6>
+                        <p class="card-text text-muted">Comfortable and affordable.</p>
+                        <a href="#" class="btn btn-dark px-4">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/offer1.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body text-center">
+                        <a href="#" class="btn btn-outline-dark btn-details">More Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/offer2.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body text-center">
+                        <a href="#" class="btn btn-outline-dark btn-details">More Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/offer3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body text-center">
+                        <a href="#" class="btn btn-outline-dark btn-details">More Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 card-hover border-0 shadow-sm rounded-4">
+                    <img src="image/her/offer4.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body text-center">
+                        <a href="#" class="btn btn-outline-dark btn-details">More Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!--  Footer Start -->
     <footer class="bg-dark text-white pt-4 pb-2 mt-5" style="height: 450px;">
@@ -736,13 +1307,26 @@
     <!-- JavaScript to toggle sections -->
     <script>
         function showSection(sectionId) {
-            // Hide all sections
+            // Hide all category sections
             document.querySelectorAll('.category-section').forEach(function (section) {
                 section.style.display = 'none';
             });
-            // Show selected
-            document.getElementById(sectionId).style.display = 'block';
+            // Show the selected one
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+                // Scroll to the section (optional)
+            }
         }
+
+        function changeImage(color) {
+    const imageMap = {
+      black: "image/her/black.jpg",
+      blue: "image/her/blue.jpg",
+      red: "image/her/red.jpg"
+    };
+    document.getElementById("productImage").src = imageMap[color];
+  }
     </script>
 
     <!-- Bootstrap JS Bundle -->

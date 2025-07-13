@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Color Change</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 100px;
+            font-family: Arial, sans-serif;
+            transition: background-color 1s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The background will change in 5 seconds</h1>
+
+    <script>
+        
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "#ffcccb"; 
+        }
+
+        setTimeout(changeBackgroundColor, 5000);
+    </script>
+
+</body>
+</html>
