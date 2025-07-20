@@ -40,70 +40,41 @@
         </div>
     </div>
 
-      <!-- Responsive Navbar start -->
+    <!-- Responsive Navbar start -->
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
         <div class="container-fluid">
-
-            <!-- 🔸 Brand Name (Left) -->
+            <!-- 🔹 Brand Name -->
             <a class="navbar-brand fw-bold text-dark" href="#">ONLY&SONS</a>
 
-            <!-- 🔸 Toggler for mobile -->
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <!-- 🔹 Mobile Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- 🔸 Mobile Icons -->
-            <div class="d-md-none d-flex align-items-center gap-2 ms-3">
-                <input type="search"
-                    class="form-control form-control-sm border-0 border-bottom bg-transparent rounded-0"
-                    placeholder="Search..." style="max-width: 130px;">
-                <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
-                <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
-                <a href="#" class="text-dark fs-5"><i class="bi bi-bag"></i></a>
-            </div>
-
-            <!-- 🔸 Collapse Content -->
-            <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbarCollapse">
-                <!-- 🔹 Nav Links -->
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-md-2">
-                    <!-- New Arrival -->
+            <!-- 🔹 Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- 🔸 Navbar Links -->
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-md-2 mt-3 mt-md-0">
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="new_arrival.html">
-                            New Arrival
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="new_arrival.html">New Arrival</a>
                     </li>
-
-                    <!-- Men Fashion -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="man_fashion.html">
-                            Man Fashion
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="man_fashion.html">Man Fashion</a>
                     </li>
-
-                    <!-- Junior -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="only&sons_junior.html">
-                            ONLY & SONS Junior
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="only&sons_junior.html">ONLY & SONS Junior</a>
                     </li>
-
-                    <!-- Shop for Her -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="shop_her.html">
-                            Shop her
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="shop_her.html">Shop Her</a>
                     </li>
-
-                    <!-- Offers -->
                     <li class="nav-item">
-                        <a class="nav-link text-danger fw-semibold" href="offers.html">Offers</a>
+                        <a class="nav-link fw-semibold text-danger" href="offers.html">Offers</a>
                     </li>
                 </ul>
 
-                <!-- 🔹 Desktop Search + Icons -->
-                <div class="d-none d-md-flex align-items-center gap-2 ms-auto">
+                <!-- 🔸 Search + Icons (All Screens) -->
+                <div class="d-flex align-items-center gap-2 ms-auto mt-3 mt-md-0">
                     <input type="search"
                         class="form-control form-control-sm border-0 border-bottom bg-transparent rounded-0"
                         placeholder="Search..." style="max-width: 200px;">
@@ -219,8 +190,6 @@
         </div>
     </div>
 
-
-
     <!--  Footer Start -->
     <footer class="bg-dark text-white pt-4 pb-2 mt-5" style="height: 450px;">
         <div class="container mt-5">
@@ -260,7 +229,7 @@
         </div>
     </footer>
 
-     <!-- JavaScript to toggle sections -->
+    <!-- JavaScript to toggle sections -->
     <script>
         function showSection(sectionId) {
             // Hide all sections

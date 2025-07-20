@@ -40,70 +40,41 @@
         </div>
     </div>
 
-     <!-- Responsive Navbar start -->
+    <!-- Responsive Bootstrap Navbar Start -->
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
         <div class="container-fluid">
-
-            <!-- 🔸 Brand Name (Left) -->
+            <!-- 🔹 Brand Name -->
             <a class="navbar-brand fw-bold text-dark" href="#">ONLY&SONS</a>
 
-            <!-- 🔸 Toggler for mobile -->
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <!-- 🔹 Mobile Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- 🔸 Mobile Icons -->
-            <div class="d-md-none d-flex align-items-center gap-2 ms-3">
-                <input type="search"
-                    class="form-control form-control-sm border-0 border-bottom bg-transparent rounded-0"
-                    placeholder="Search..." style="max-width: 130px;">
-                <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
-                <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
-                <a href="#" class="text-dark fs-5"><i class="bi bi-bag"></i></a>
-            </div>
-
-            <!-- 🔸 Collapse Content -->
-            <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbarCollapse">
-                <!-- 🔹 Nav Links -->
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-md-2">
-                    <!-- New Arrival -->
+            <!-- 🔹 Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- 🔸 Navbar Links -->
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-md-2 mt-3 mt-md-0">
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="new_arrival.html">
-                            New Arrival
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="new_arrival.html">New Arrival</a>
                     </li>
-
-                    <!-- Men Fashion -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="man_fashion.html">
-                            Man Fashion
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="man_fashion.html">Man Fashion</a>
                     </li>
-
-                    <!-- Junior -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="only&sons_junior.html">
-                            ONLY & SONS Junior
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="only&sons_junior.html">ONLY & SONS Junior</a>
                     </li>
-
-                    <!-- Shop for Her -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="shop_her.html">
-                            Shop her
-                        </a>
+                        <a class="nav-link fw-semibold text-dark" href="shop_her.html">Shop Her</a>
                     </li>
-
-                    <!-- Offers -->
                     <li class="nav-item">
-                        <a class="nav-link text-danger fw-semibold" href="offers.html">Offers</a>
+                        <a class="nav-link fw-semibold text-danger" href="offers.html">Offers</a>
                     </li>
                 </ul>
 
-                <!-- 🔹 Desktop Search + Icons -->
-                <div class="d-none d-md-flex align-items-center gap-2 ms-auto">
+                <!-- 🔸 Search + Icons (All Screens) -->
+                <div class="d-flex align-items-center gap-2 ms-auto mt-3 mt-md-0">
                     <input type="search"
                         class="form-control form-control-sm border-0 border-bottom bg-transparent rounded-0"
                         placeholder="Search..." style="max-width: 200px;">
@@ -114,7 +85,8 @@
             </div>
         </div>
     </nav>
-    <!-- Responsive Navbar end-->
+    <!--  Responsive Bootstrap Navbar End -->
+
 
     <!-------slider-------->
     <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3" data-bs-ride="carousel">
@@ -139,6 +111,1782 @@
         </button>
     </div>
 
+
+    <div class="container my-4">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <button class="btn btn-dark px-4 py-2 shadow btn-fixed" onclick="showSection('tshirt')">T-Shirt</button>
+            <button class="btn btn-dark px-4 py-2 shadow btn-fixed" onclick="showSection('jeans')">Jeans</button>
+            <button class="btn btn-dark px-4 py-2 shadow btn-fixed" onclick="showSection('jackets')">Jackets</button>
+            <button class="btn btn-dark px-4 py-2 shadow btn-fixed" onclick="showSection('loungwear')">Loung
+                Wear</button>
+            <button class="btn btn-dark px-4 py-2 shadow btn-fixed" onclick="showSection('sports')">Sports</button>
+        </div>
+    </div>
+
+    <!-----------------------------Sections-------------------------------->
+
+    <!--------T-shirt--------->
+    <div id="tshirt" class="category-section">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img1.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img2.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img3.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img4.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img5.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img6.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img7.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/t-shirt/img5.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------Jense--------->
+    <div id="jeans" class="category-section">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img1.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img2.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img3.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img4.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img5.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img6.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img7.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jeans_man/img8.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------Jacket--------->
+    <div id="jackets" class="category-section">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img1.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img2.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img3.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img4.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img5.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img6.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img7.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/jacket/img8.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Loung wear--------->
+    <div id="loungwear" class="category-section">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img1.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img2.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img3.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img4.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img5.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img6.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img7.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/loungwear/img8.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------sports--------->
+    <div id="sports" class="category-section">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img1.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img2.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img3.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img4.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img5.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img6.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img7.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/sportman/img8.jpg" style="height:400px;" class="card-img-top rounded-top-4"
+                            alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-semibold">ONSNEWKODYL Overshirt</h5>
+                            <p class="text-center text-muted mb-2">Price: <strong>₹1,499</strong></p>
+
+                            <!-- Size Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Size:</label>
+                                <select class="form-select">
+                                    <option selected>Select Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <!-- Available Colors -->
+                            <div class="mb-3">
+                                <label class="form-label">Available Colors:</label>
+                                <div class="d-flex gap-2">
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: black;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: navy;"></div>
+                                    <div class="rounded-circle"
+                                        style="width: 25px; height: 25px; background-color: maroon;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <button class="btn btn-dark px-3 w-50 me-2">Add to Cart</button>
+                                <button class="btn btn-outline-primary px-3 w-50">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-----------------man fashion index---------------------->
     <div class="container">
         <div class="card text-center mx-auto mt-5" style="width: 70%; border-radius: 10px; border-color: darkgray;">
@@ -154,7 +1902,7 @@
                             <img src="image/card1.jpg" class="card-img-top" alt="...">
                         </div>
                     </div>
-                    
+
                     <!-----card2----->
                     <div class="col">
                         <div class="card h-100">
@@ -177,496 +1925,6 @@
             </div>
             <div class="card-footer text-muted" style="border-color: darkgray;">
                 2 days ago
-            </div>
-        </div>
-    </div>
-
-    <!--------T-shirt--------->
-    <div id="tshirt" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
-                                Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
-                                Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
-                                Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
-                                Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
-                                Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
-                                Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/t-shirt/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
-                                T-shirt</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--------Jense--------->
-    <div id="jeans" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
-                                Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
-                                Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
-                                Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
-                                Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
-                                Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
-                                Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jeans_man/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
-                                T-shirt</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--------Jacket--------->
-    <div id="jackets" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
-                                Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
-                                Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
-                                Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
-                                Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
-                                Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
-                                Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/jacket/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
-                                T-shirt</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--------Loung wear--------->
-    <div id="loungwear" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
-                                Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
-                                Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
-                                Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
-                                Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
-                                Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
-                                Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/loungwear/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
-                                T-shirt</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--------sports--------->
-    <div id="sports" class="category-section mt-5" style="display:none;">
-        <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSNEWKODYL
-                                Overshirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSTOBIE</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKAL Slim Fit
-                                Shorts</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSMARK Slim Fit
-                                Chino
-                                trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKASPER Knit
-                                Cardigan</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSSINUS Loose
-                                Fit Trousers
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">onsCAIDEN
-                                Shirt</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/sportman/img8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center" style="font-size: medium;">ONSKEANE
-                                T-shirt</h5>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -715,12 +1973,16 @@
     <!-- JavaScript to toggle sections -->
     <script>
         function showSection(sectionId) {
-            // Hide all sections
+            // Hide all category sections
             document.querySelectorAll('.category-section').forEach(function (section) {
                 section.style.display = 'none';
             });
-            // Show selected
-            document.getElementById(sectionId).style.display = 'block';
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
         }
     </script>
 

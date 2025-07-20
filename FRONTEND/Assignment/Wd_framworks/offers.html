@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Vertical feel using Bootstrap carousel with fade effect */
+        #bannerCarousel .carousel-item {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cce5ff;
+            color: #000;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        #bannerCarousel {
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .offer-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 12px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .newsletter {
+            background-color: #343a40;
+            color: white;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Rotating Banner using Bootstrap Carousel -->
+    <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                Buy now, pay later with Klarna. | 100 day returns.
+            </div>
+            <div class="carousel-item">
+                Check new in!
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive Navbar start -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
+        <div class="container-fluid">
+            <!-- 🔹 Brand Name -->
+            <a class="navbar-brand fw-bold text-dark" href="#">ONLY&SONS</a>
+
+            <!-- 🔹 Mobile Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 🔹 Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- 🔸 Navbar Links -->
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-md-2 mt-3 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark" href="new_arrival.html">New Arrival</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark" href="man_fashion.html">Man Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark" href="only&sons_junior.html">ONLY & SONS Junior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark" href="shop_her.html">Shop Her</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-danger" href="offers.html">Offers</a>
+                    </li>
+                </ul>
+
+                <!-- 🔸 Search + Icons (All Screens) -->
+                <div class="d-flex align-items-center gap-2 ms-auto mt-3 mt-md-0">
+                    <input type="search"
+                        class="form-control form-control-sm border-0 border-bottom bg-transparent rounded-0"
+                        placeholder="Search..." style="max-width: 200px;">
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-bag"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Responsive Navbar end-->
+
+    <!-------slider-------->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/offslide1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/offslide2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/offslide3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/offslide4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/offslide5.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Offers by Category -->
+    <section class="offer-section text-center mt-5">
+        <div class="container">
+            <h2 class="offer-title"
+                style="font-size: xx-large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(192, 15, 15);">
+                Explore Offers by Category</h2>
+            <div class="row g-4 mt-2">
+
+                <!-- Kids Wear -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card position-relative h-100">
+                        <span class="offer-badge">Flat 40% OFF</span>
+                        <img src="image/offer1.jpg" style="height: 450px;" class="card-img-top" alt="Kids Wear">
+                        <div class="card-body">
+                            <h5 class="card-title">Kids Collection</h5>
+                            <p class="card-text">Comfort meets style for your little ones. Discover playful prints, soft
+                                fabrics, and bright colors.</p>
+                            <a href="#" class="btn btn-primary w-100">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Men's Wear -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card position-relative h-100">
+                        <span class="offer-badge">BOGO Offer</span>
+                        <img src="image/offer3.jpg" style="height: 450px;" class="card-img-top" alt="Men's Wear">
+                        <div class="card-body">
+                            <h5 class="card-title">Men’s Fashion</h5>
+                            <p class="card-text">Buy 1 Get 1 Free on men’s shirts, jeans, and tees. Modern styles
+                                crafted for comfort and durability.</p>
+                            <a href="#" class="btn btn-success w-100">Explore Deals</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Women's Wear -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card position-relative h-100">
+                        <span class="offer-badge">Up to 60% OFF</span>
+                        <img src="image/offer2.jpg" style="height: 450px;" class="card-img-top" alt="Women's Wear">
+                        <div class="card-body">
+                            <h5 class="card-title">Her Collection</h5>
+                            <p class="card-text">From casual to chic, grab trendy outfits at up to 60% off. Elegant,
+                                comfortable, and stylish.</p>
+                            <a href="#" class="btn btn-danger w-100">Grab Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Arrivals -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card position-relative h-100">
+                        <span class="offer-badge">Just In</span>
+                        <img src="image/offer4.jpg" style="height: 450px;" class="card-img-top" alt="New Arrivals">
+                        <div class="card-body">
+                            <h5 class="card-title">New Arrivals</h5>
+                            <p class="card-text">Check out the latest additions to our collection. Fresh styles, limited
+                                stock, exclusive deals.</p>
+                            <a href="#" class="btn btn-warning w-100">See What’s New</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Coupon Banner -->
+    <section class="text-center py-5 bg-warning mt-4">
+        <h2 class="mb-3">🎁 Use Code <strong>EXTRA20</strong> for 20% OFF on Your First Order!</h2>
+        <a href="#" class="btn btn-dark btn-lg">Shop All Offers</a>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter text-center">
+        <div class="container">
+            <h3 class="mb-4">📬 Stay Updated with Fresh Deals</h3>
+            <form class="row justify-content-center">
+                <div class="col-md-6 col-sm-8">
+                    <input type="email" class="form-control mb-3"
+                        placeholder="Enter your email for exclusive discounts">
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <button class="btn btn-primary w-100">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!--  Footer Start -->
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5" style="height: 450px;">
+        <div class="container mt-5">
+            <div class="row">
+
+                <!--  Brand/About -->
+                <div class="col-md-4 mb-3">
+                    <h5>MyWebsite</h5>
+                    <p>Empowering your web experience with modern, responsive design using Bootstrap.</p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact</h5>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: Mumbai, India</p>
+                </div>
+
+            </div>
+
+            <!--Copyright -->
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0">&copy; 2025 MyWebsite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to toggle sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.category-section').forEach(function (section) {
+                section.style.display = 'none';
+            });
+            // Show selected
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
